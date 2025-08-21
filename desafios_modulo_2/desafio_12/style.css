@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+:root {
+    --fonte-titulo: 'Passion One',  'cursive';
+    --fonte-principal: 'Sriracha',  'cursive';
+}
+
+* { /* Criando uma configuração global*/
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: black;
+    min-height: 150px;
+    padding-top: 50px;
+}
+
+header > h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+header > p {
+    font-family: var(--fonte-titulo);
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+main > article > pre {
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    text-justify: auto;
+    line-height: 2em;
+    margin: 20px;
+    text-align: left;
+
+
+}
+
+main img {
+    width: 50%;
+}
+
+main img.estrofe {
+    background-image: url('/imagens/background002.jpg');
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+main img.estrofe-imagem::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Camada escura para contraste */
+    z-index: 0;
+}
+
+main img.estrofe-imagem p {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    white-space: pre-line;
+}
