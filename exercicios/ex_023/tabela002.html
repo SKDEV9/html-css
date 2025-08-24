@@ -19,9 +19,26 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -42,8 +59,8 @@
         <thead>
 
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
 
         </thead>
@@ -51,7 +68,7 @@
         <tfoot>
 
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
             
@@ -197,6 +214,20 @@
 
         </tbody>      
     </table>
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab eaque a id officiis cumque dignissimos inventore et provident quo facilis. Nesciunt laudantium vero quod dolores eligendi maxime officia dicta possimus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint ut unde atque, molestias dolor sit? Aliquid, qui. Blanditiis, magni nostrum. Dolorem ut cum distinctio excepturi ipsa alias ipsam dolor nihil?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, aliquid excepturi ipsam maxime, autem qui reprehenderit explicabo nostrum, dolorem rem asperiores ab quia similique laboriosam at impedit enim quas reiciendis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique pariatur sit distinctio impedit ab ut alias earum voluptatum cum consectetur numquam ipsam obcaecati quod accusantium, reiciendis facilis repellat voluptates? Expedita!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, ducimus explicabo repellendus facere sint magnam, eaque sapiente debitis repudiandae a quo fugit possimus consequatur vel enim provident in dolor omnis?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe illo cupiditate ipsam voluptatum, similique animi nam itaque sunt, distinctio amet magni cumque eligendi velit odit voluptatibus sit consequuntur praesentium a.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, quo nesciunt consectetur rerum natus perspiciatis aut maiores quidem id dignissimos molestiae velit autem qui commodi sequi, hic ipsum ea ullam?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum rem dolore nam fugiat modi facilis non corrupti praesentium, quidem natus blanditiis inventore necessitatibus nostrum atque. Enim aspernatur facere veritatis reiciendis!
+    </p>
   
 </body>
 </html>
